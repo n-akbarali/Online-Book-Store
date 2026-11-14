@@ -1,0 +1,1422 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MUTOLAA — Zamonaviy Onlayn Kitob Do'koni</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23E5A93C' stroke='%230D0F12' stroke-width='3'/%3E%3Cpath d='M16 22c5 0 11 1.5 16 5 5-3.5 11-5 16-5v22c-5 0-11 1.5-16 5-5-3.5-11-5-16-5V22z' fill='none' stroke='%230D0F12' stroke-width='4' stroke-linejoin='round'/%3E%3Cline x1='32' y1='27' x2='32' y2='49' stroke='%230D0F12' stroke-width='3.5' stroke-linecap='round'/%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="#bosh-sahifa" class="brand">
+        <span class="brand-logo-circle">
+          <i class="fa-solid fa-book-open logo-main-icon"></i>
+          <i class="fa-solid fa-feather-pointed logo-sub-icon"></i>
+        </span>
+        <span class="brand-name-wrap">
+          <span class="brand-text">MUTOLAA</span>
+          <span class="brand-sub">KITOB UYI</span>
+        </span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#bosh-sahifa" class="nav-link active" data-section="bosh-sahifa">Bosh sahifa</a>
+        <a href="#yonalishlar" class="nav-link" data-section="yonalishlar">Yo'nalishlar</a>
+        <a href="#katalog" class="nav-link" data-section="katalog">Katalog</a>
+        <a href="#xizmatlar" class="nav-link" data-section="xizmatlar">Xizmatlar</a>
+        <a href="#mualliflar" class="nav-link" data-section="mualliflar">Mualliflar</a>
+        <a href="#fikrlar" class="nav-link" data-section="fikrlar">Fikrlar</a>
+        <a href="#aloqa" class="nav-link" data-section="aloqa">Aloqa</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button type="button" class="icon-btn" id="themeToggleBtn" aria-label="Mavzuni o'zgartirish">
+          <i class="fa-solid fa-sun"></i>
+        </button>
+        <button type="button" class="cart-trigger" id="openCartBtn" aria-label="Savatcha">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span class="cart-badge" id="cartBadge">0</span>
+        </button>
+        <button type="button" class="icon-btn mobile-menu-btn" id="mobileMenuBtn" aria-label="Menyu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="bosh-sahifa" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <span class="hero-kicker"><i class="fa-solid fa-sparkles"></i> Saralangan jahon va o'zbek adabiyoti</span>
+          <h1>Har bir sahifada <span class="gold-text">yangi dunyo</span> kashf eting</h1>
+          <p>Biznes, dasturlash, psixologiya va mumtoz badiiy asarlarning eng sara nashrlari. O'zbekiston bo'ylab 24 soat ichida tezkor yetkazib berish.</p>
+
+          <div class="hero-buttons">
+            <button type="button" class="btn-primary filter-btn active" data-category="all" data-scroll="true">
+              <i class="fa-solid fa-compass"></i> Katalogni ko'rish
+            </button>
+            <button type="button" class="btn-secondary filter-btn" data-category="aksiya" data-scroll="true">
+              <i class="fa-solid fa-tag"></i> Chegirmadagi kitoblar
+            </button>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-item">
+              <strong>12,000+</strong>
+              <span>Kitob fondi</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <strong>24 soat</strong>
+              <span>Tezkor yetkazish</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <strong>4.9 / 5</strong>
+              <span>Kitobxonlar bahosi</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-glow"></div>
+          <div class="hero-book-3d">
+            <div class="book-spine"></div>
+            <div class="book-front">
+              <span class="hb-badge">HAFTA BESTSELLERI</span>
+              <i class="fa-solid fa-atom hb-icon"></i>
+              <h2>Atomic Habits</h2>
+              <p>Kichik o'zgarishlar, ulkan natijalar</p>
+              <span class="hb-author">James Clear</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="yonalishlar" class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="section-tag">KATEGORIYALAR</span>
+            <h2>Mashhur yo'nalishlar</h2>
+          </div>
+          <p>Kerakli janrni tanlang va mos kitoblarni darhol ko'ring</p>
+        </div>
+
+        <div class="bento-grid">
+          <button type="button" class="bento-card bento-large filter-btn" data-category="biznes" data-scroll="true">
+            <div class="bento-icon"><i class="fa-solid fa-chart-line"></i></div>
+            <div class="bento-body">
+              <span class="bento-count">3 ta sara nashr</span>
+              <h3>Biznes va Startaplar</h3>
+              <p>Samaradorlik, menejment va zamonaviy tadbirkorlik strategiyalari</p>
+            </div>
+            <span class="bento-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+          </button>
+
+          <button type="button" class="bento-card filter-btn" data-category="it" data-scroll="true">
+            <div class="bento-icon"><i class="fa-solid fa-code"></i></div>
+            <div class="bento-body">
+              <span class="bento-count">3 ta nashr</span>
+              <h3>IT va Dasturlash</h3>
+              <p>Clean Code va tizim arxitekturasi</p>
+            </div>
+          </button>
+
+          <button type="button" class="bento-card filter-btn" data-category="psixologiya" data-scroll="true">
+            <div class="bento-icon"><i class="fa-solid fa-brain"></i></div>
+            <div class="bento-body">
+              <span class="bento-count">3 ta nashr</span>
+              <h3>Psixologiya</h3>
+              <p>Odatlar va raqamli minimalizm</p>
+            </div>
+          </button>
+
+          <button type="button" class="bento-card filter-btn" data-category="badiiy" data-scroll="true">
+            <div class="bento-icon"><i class="fa-solid fa-feather-pointed"></i></div>
+            <div class="bento-body">
+              <span class="bento-count">4 ta nashr</span>
+              <h3>Badiiy Adabiyot</h3>
+              <p>O'zbek va jahon nasri durdonalari</p>
+            </div>
+          </button>
+
+          <button type="button" class="bento-card filter-btn" data-category="tarix" data-scroll="true">
+            <div class="bento-icon"><i class="fa-solid fa-landmark"></i></div>
+            <div class="bento-body">
+              <span class="bento-count">3 ta nashr</span>
+              <h3>Tarix va Falsafa</h3>
+              <p>Insoniyat kechmishi va kelajagi</p>
+            </div>
+          </button>
+
+          <button type="button" class="bento-card filter-btn" data-category="bolalar" data-scroll="true">
+            <div class="bento-icon"><i class="fa-solid fa-rocket"></i></div>
+            <div class="bento-body">
+              <span class="bento-count">2 ta nashr</span>
+              <h3>Bolalar Adabiyoti</h3>
+              <p>Tasavvur va mehr uyg'otuvchi ertaklar</p>
+            </div>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="katalog" class="section">
+      <div class="container">
+        <div class="section-head catalog-head">
+          <div>
+            <span class="section-tag">TO'PLAM</span>
+            <h2>Katalog va Bestsellerlar</h2>
+          </div>
+
+          <div class="search-box">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" id="searchInput" placeholder="Kitob yoki muallif izlang..." />
+          </div>
+        </div>
+
+        <div class="filter-bar">
+          <button type="button" class="filter-pill filter-btn active" data-category="all">Barchasi (18)</button>
+          <button type="button" class="filter-pill filter-btn" data-category="biznes">Biznes</button>
+          <button type="button" class="filter-pill filter-btn" data-category="it">IT va Dasturlash</button>
+          <button type="button" class="filter-pill filter-btn" data-category="badiiy">Badiiy Adabiyot</button>
+          <button type="button" class="filter-pill filter-btn" data-category="psixologiya">Psixologiya</button>
+          <button type="button" class="filter-pill filter-btn" data-category="tarix">Tarix va Falsafa</button>
+          <button type="button" class="filter-pill filter-btn" data-category="bolalar">Bolalar Adabiyoti</button>
+          <button type="button" class="filter-pill filter-btn" data-category="aksiya">Chegirmalar</button>
+        </div>
+
+        <div class="filter-banner" id="filterBanner" hidden>
+          <span id="filterBannerText">Tanlangan bo'lim</span>
+          <button type="button" class="reset-btn" id="resetFilterBtn">
+            <i class="fa-solid fa-xmark"></i> Barchasini ko'rsatish
+          </button>
+        </div>
+
+        <div class="books-grid" id="booksGrid">
+
+          <article class="book-card psixologiya aksiya" data-author="james-clear" data-author-photo="./1.jpg" data-price="89000" data-desc="Kichik odatlar orqali katta natijalarga erishishning ilmiy asoslangan amaliy tizimi.">
+            <div class="book-visual">
+              <span class="badge-sale">Chegirma</span>
+              <div class="book-cover-3d cover-amber">
+                <div class="cover-spine"></div>
+                <div class="cover-content">
+                  <span class="cover-tag">Psixologiya</span>
+                  <i class="fa-solid fa-atom cover-emblem"></i>
+                  <strong class="cover-title">Atomic Habits</strong>
+                  <small class="cover-author">James Clear</small>
+                </div>
+              </div>
+              <button type="button" class="btn-quick-view"><i class="fa-solid fa-eye"></i> Batafsil</button>
+            </div>
+            <div class="book-info">
+              <div class="book-meta">
+                <span class="book-genre">Psixologiya</span>
+                <span class="book-rating"><i class="fa-solid fa-star"></i> 4.9</span>
+              </div>
+              <h3 class="book-title">Atomic Habits</h3>
+              <div class="book-author-row">
+                <span class="book-author-avatar">
+                  <i class="fa-solid fa-user-pen"></i>
+                  <img class="author-photo" data-author="james-clear" src="./1.jpg" alt="James Clear" />
+                </span>
+                <p class="book-author">James Clear</p>
+              </div>
+              <div class="book-footer">
+                <div class="book-price">
+                  <span class="price-now">89 000 so'm</span>
+                  <span class="price-old">115 000 so'm</span>
+                </div>
+                <div class="book-actions">
+                  <button type="button" class="btn-add-cart"><i class="fa-solid fa-bag-shopping"></i> Savatga</button>
+                  <div class="qty-stepper" style="display: none;">
+                    <button type="button" class="qty-btn btn-minus"><i class="fa-solid fa-minus"></i></button>
+                    <span class="qty-val">0</span>
+                    <button type="button" class="qty-btn btn-plus"><i class="fa-solid fa-plus"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="book-card psixologiya" data-author="james-clear" data-author-photo="./1.jpg" data-price="74000" data-desc="Kunlik odatlarni kuzatish, tahlil qilish va mustahkamlash uchun maxsus ish daftar-qo'llanma.">
+            <div class="book-visual">
+              <div class="book-cover-3d cover-gold">
+                <div class="cover-spine"></div>
+                <div class="cover-content">
+                  <span class="cover-tag">Psixologiya</span>
+                  <i class="fa-solid fa-book-journal-whills cover-emblem"></i>
+                  <strong class="cover-title">Clear Habits Journal</strong>
+                  <small class="cover-author">James Clear</small>
+                </div>
+              </div>
+              <button type="button" class="btn-quick-view"><i class="fa-solid fa-eye"></i> Batafsil</button>
+            </div>
+            <div class="book-info">
+              <div class="book-meta">
+                <span class="book-genre">Psixologiya</span>
+                <span class="book-rating"><i class="fa-solid fa-star"></i> 4.8</span>
+              </div>
+              <h3 class="book-title">Clear Habits Journal</h3>
+              <div class="book-author-row">
+                <span class="book-author-avatar">
+                  <i class="fa-solid fa-user-pen"></i>
+                  <img class="author-photo" data-author="james-clear" src="./1.jpg" alt="James Clear" />
+                </span>
+                <p class="book-author">James Clear</p>
+              </div>
+              <div class="book-footer">
+                <div class="book-price">
+                  <span class="price-now">74 000 so'm</span>
+                </div>
+                <div class="book-actions">
+                  <button type="button" class="btn-add-cart"><i class="fa-solid fa-bag-shopping"></i> Savatga</button>
+                  <div class="qty-stepper" style="display: none;">
+                    <button type="button" class="qty-btn btn-minus"><i class="fa-solid fa-minus"></i></button>
+                    <span class="qty-val">0</span>
+                    <button type="button" class="qty-btn btn-plus"><i class="fa-solid fa-plus"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="book-card biznes aksiya" data-author="james-clear" data-author-photo="./1.jpg" data-price="82000" data-desc="Har kuni 1 foizga yaxshilanish falsafasi va jamoaviy samaradorlikni oshirish usullari.">
+            <div class="book-visual">
+              <span class="badge-sale">Chegirma</span>
+              <div class="book-cover-3d cover-sky">
+                <div class="cover-spine"></div>
+                <div class="cover-content">
+                  <span class="cover-tag">Biznes</span>
+                  <i class="fa-solid fa-arrow-trend-up cover-emblem"></i>
+                  <strong class="cover-title">Continuous Improvement</strong>
+                  <small class="cover-author">James Clear</small>
+                </div>
+              </div>
+              <button type="button" class="btn-quick-view"><i class="fa-solid fa-eye"></i> Batafsil</button>
+            </div>
+            <div class="book-info">
+              <div class="book-meta">
+                <span class="book-genre">Biznes</span>
+                <span class="book-rating"><i class="fa-solid fa-star"></i> 4.7</span>
+              </div>
+              <h3 class="book-title">Continuous Improvement</h3>
+              <div class="book-author-row">
+                <span class="book-author-avatar">
+                  <i class="fa-solid fa-user-pen"></i>
+                  <img class="author-photo" data-author="james-clear" src="./1.jpg" alt="James Clear" />
+                </span>
+                <p class="book-author">James Clear</p>
+              </div>
+              <div class="book-footer">
+                <div class="book-price">
+                  <span class="price-now">82 000 so'm</span>
+                  <span class="price-old">98 000 so'm</span>
+                </div>
+                <div class="book-actions">
+                  <button type="button" class="btn-add-cart"><i class="fa-solid fa-bag-shopping"></i> Savatga</button>
+                  <div class="qty-stepper" style="display: none;">
+                    <button type="button" class="qty-btn btn-minus"><i class="fa-solid fa-minus"></i></button>
+                    <span class="qty-val">0</span>
+                    <button type="button" class="qty-btn btn-plus"><i class="fa-solid fa-plus"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="book-card it aksiya" data-author="robert-martin" data-author-photo="./2.jpg" data-price="115000" data-desc="O'qilishi oson, barqaror va professional dasturiy kod yozish san'ati bo'yicha klassik qo'llanma.">
+            <div class="book-visual">
+              <span class="badge-sale">Chegirma</span>
+              <div class="book-cover-3d cover-emerald">
+                <div class="cover-spine"></div>
+                <div class="cover-content">
+                  <span class="cover-tag">IT va Dasturlash</span>
+                  <i class="fa-solid fa-code cover-emblem"></i>
+                  <strong class="cover-title">Clean Code</strong>
+                  <small class="cover-author">Robert C. Martin</small>
+                </div>
+              </div>
+              <button type="button" class="btn-quick-view"><i class="fa-solid fa-eye"></i> Batafsil</button>
+            </div>
+            <div class="book-info">
+              <div class="book-meta">
+                <span class="book-genre">IT va Dasturlash</span>
+                <span class="book-rating"><i class="fa-solid fa-star"></i> 4.9</span>
+              </div>
+              <h3 class="book-title">Clean Code</h3>
+              <div class="book-author-row">
+                <span class="book-author-avatar">
+                  <i class="fa-solid fa-user-pen"></i>
+                  <img class="author-photo" data-author="robert-martin" src="./2.jpg" alt="Robert C. Martin" />
+                </span>
+                <p class="book-author">Robert C. Martin</p>
+              </div>
+              <div class="book-footer">
+                <div class="book-price">
+                  <span class="price-now">115 000 so'm</span>
+                  <span class="price-old">140 000 so'm</span>
+                </div>
+                <div class="book-actions">
+                  <button type="button" class="btn-add-cart"><i class="fa-solid fa-bag-shopping"></i> Savatga</button>
+                  <div class="qty-stepper" style="display: none;">
+                    <button type="button" class="qty-btn btn-minus"><i class="fa-solid fa-minus"></i></button>
+                    <span class="qty-val">0</span>
+                    <button type="button" class="qty-btn btn-plus"><i class="fa-solid fa-plus"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="book-card it" data-author="robert-martin" data-author-photo="./2.jpg" data-price="120000" data-desc="Katta tizimlar va dasturiy arxitekturani uzoq yillar barqaror saqlash tamoyillari.">
+            <div class="book-visual">
+              <div class="book-cover-3d cover-blue">
+                <div class="cover-spine"></div>
+                <div class="cover-content">
+                  <span class="cover-tag">IT va Dasturlash</span>
+                  <i class="fa-solid fa-layer-group cover-emblem"></i>
+                  <strong class="cover-title">Clean Architecture</strong>
+                  <small class="cover-author">Robert C. Martin</small>
+                </div>
+              </div>
+              <button type="button" class="btn-quick-view"><i class="fa-solid fa-eye"></i> Batafsil</button>
+            </div>
+            <div class="book-info">
+              <div class="book-meta">
+                <span class="book-genre">IT va Dasturlash</span>
+                <span class="book-rating"><i class="fa-solid fa-star"></i> 4.8</span>
+              </div>
+              <h3 class="book-title">Clean Architecture</h3>
+              <div class="book-author-row">
+                <span class="book-author-avatar">
+                  <i class="fa-solid fa-user-pen"></i>
+                  <img class="author-photo" data-author="robert-martin" src="./2.jpg" alt="Robert C. Martin" />
+                </span>
+                <p class="book-author">Robert C. Martin</p>
+              </div>
+              <div class="book-footer">
+                <div class="book-price">
+                  <span class="price-now">120 000 so'm</span>
+                </div>
+                <div class="book-actions">
+                  <button type="button" class="btn-add-cart"><i class="fa-solid fa-bag-shopping"></i> Savatga</button>
+                  <div class="qty-stepper" style="display: none;">
+                    <button type="button" class="qty-btn btn-minus"><i class="fa-solid fa-minus"></i></button>
+                    <span class="qty-val">0</span>
+                    <button type="button" class="qty-btn btn-plus"><i class="fa-solid fa-plus"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="book-card it aksiya" data-author="robert-martin" data-author-photo="./2.jpg" data-price="99000" data-desc="Professional dasturchining ish etikasi, muddatlarni boshqarish va bosim ostida ishlash madaniyati.">
+            <div class="book-visual">
+              <span class="badge-sale">Chegirma</span>
+              <div class="book-cover-3d cover-purple">
+                <div class="cover-spine"></div>
+                <div class="cover-content">
+                  <span class="cover-tag">IT va Dasturlash</span>
+                  <i class="fa-solid fa-terminal cover-emblem"></i>
+                  <strong class="cover-title">The Clean Coder</strong>
+                  <small class="cover-author">Robert C. Martin</small>
+                </div>
+              </div>
+              <button type="button" class="btn-quick-view"><i class="fa-solid fa-eye"></i> Batafsil</button>
+            </div>
+            <div class="book-info">
+              <div class="book-meta">
+                <span class="book-genre">IT va Dasturlash</span>
+                <span class="book-rating"><i class="fa-solid fa-star"></i> 4.8</span>
+              </div>
+              <h3 class="book-title">The Clean Coder</h3>
+              <div class="book-author-row">
+                <span class="book-author-avatar">
+                  <i class="fa-solid fa-user-pen"></i>
+                  <img class="author-photo" data-author="robert-martin" src="./2.jpg" alt="Robert C. Martin" />
+                </span>
+                <p class="book-author">Robert C. Martin</p>
+              </div>
+              <div class="book-footer">
+                <div class="book-price">
+                  <span class="price-now">99 000 so'm</span>
+                  <span class="price-old">120 000 so'm</span>
+                </div>
+                <div class="book-actions">
+                  <button type="button" class="btn-add-cart"><i class="fa-solid fa-bag-shopping"></i> Savatga</button>
+                  <div class="qty-stepper" style="display: none;">
+                    <button type="button" class="qty-btn btn-minus"><i class="fa-solid fa-minus"></i></button>
+                    <span class="qty-val">0</span>
+                    <button type="button" class="qty-btn btn-plus"><i class="fa-solid fa-plus"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="book-card badiiy aksiya" data-author="otkir-hoshimov" data-author-photo="./3.jpg" data-price="54000" data-desc="Ona mehri, sadoqat va insoniy qadriyatlar haqidagi o'zbek adabiyotining eng ta'sirli qissasi.">
+            <div class="book-visual">
+              <span class="badge-sale">Chegirma</span>
+              <div class="book-cover-3d cover-terracotta">
+                <div class="cover-spine"></div>
+                <div class="cover-content">
+                  <span class="cover-tag">Badiiy Adabiyot</span>
+                  <i class="fa-solid fa-feather-pointed cover-emblem"></i>
+                  <strong class="cover-title">Dunyoning ishlari</strong>
+                  <small class="cover-author">O'tkir Hoshimov</small>
+                </div>
+              </div>
+              <button type="button" class="btn-quick-view"><i class="fa-solid fa-eye"></i> Batafsil</button>
+            </div>
+            <div class="book-info">
+              <div class="book-meta">
+                <span class="book-genre">Badiiy Adabiyot</span>
+                <span class="book-rating"><i class="fa-solid fa-star"></i> 5.0</span>
+              </div>
+              <h3 class="book-title">Dunyoning ishlari</h3>
+              <div class="book-author-row">
+                <span class="book-author-avatar">
+                  <i class="fa-solid fa-user-pen"></i>
+                  <img class="author-photo" data-author="otkir-hoshimov" src="./3.jpg" alt="O'tkir Hoshimov" />
+                </span>
+                <p class="book-author">O'tkir Hoshimov</p>
+              </div>
+              <div class="book-footer">
+                <div class="book-price">
+                  <span class="price-now">54 000 so'm</span>
+                  <span class="price-old">68 000 so'm</span>
+                </div>
+                <div class="book-actions">
+                  <button type="button" class="btn-add-cart"><i class="fa-solid fa-bag-shopping"></i> Savatga</button>
+                  <div class="qty-stepper" style="display: none;">
+                    <button type="button" class="qty-btn btn-minus"><i class="fa-solid fa-minus"></i></button>
+                    <span class="qty-val">0</span>
+                    <button type="button" class="qty-btn btn-plus"><i class="fa-solid fa-plus"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="book-card badiiy" data-author="otkir-hoshimov" data-author-photo="./3.jpg" data-price="69000" data-desc="Urush yillari va undan keyingi davr odamlarining matonati, sevgisi va hayot sinovlari haqida roman.">
+            <div class="book-visual">
+              <div class="book-cover-3d cover-amber">
+                <div class="cover-spine"></div>
+                <div class="cover-content">
+                  <span class="cover-tag">Badiiy Adabiyot</span>
+                  <i class="fa-solid fa-door-open cover-emblem"></i>
+                  <strong class="cover-title">Ikki eshik orasi</strong>
+                  <small class="cover-author">O'tkir Hoshimov</small>
+                </div>
+              </div>
+              <button type="button" class="btn-quick-view"><i class="fa-solid fa-eye"></i> Batafsil</button>
+            </div>
+            <div class="book-info">
+              <div class="book-meta">
+                <span class="book-genre">Badiiy Adabiyot</span>
+                <span class="book-rating"><i class="fa-solid fa-star"></i> 4.9</span>
+              </div>
+              <h3 class="book-title">Ikki eshik orasi</h3>
+              <div class="book-author-row">
+                <span class="book-author-avatar">
+                  <i class="fa-solid fa-user-pen"></i>
+                  <img class="author-photo" data-author="otkir-hoshimov" src="./3.jpg" alt="O'tkir Hoshimov" />
+                </span>
+                <p class="book-author">O'tkir Hoshimov</p>
+              </div>
+              <div class="book-footer">
+                <div class="book-price">
+                  <span class="price-now">69 000 so'm</span>
+                </div>
+                <div class="book-actions">
+                  <button type="button" class="btn-add-cart"><i class="fa-solid fa-bag-shopping"></i> Savatga</button>
+                  <div class="qty-stepper" style="display: none;">
+                    <button type="button" class="qty-btn btn-minus"><i class="fa-solid fa-minus"></i></button>
+                    <span class="qty-val">0</span>
+                    <button type="button" class="qty-btn btn-plus"><i class="fa-solid fa-plus"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="book-card badiiy aksiya" data-author="otkir-hoshimov" data-author-photo="./3.jpg" data-price="49000" data-desc="Adibning hayot, jamiyat, inson tabiati va vaqt haqidagi chuqur falsafiy mushohadalari.">
+            <div class="book-visual">
+              <span class="badge-sale">Chegirma</span>
+              <div class="book-cover-3d cover-gold">
+                <div class="cover-spine"></div>
+                <div class="cover-content">
+                  <span class="cover-tag">Badiiy Adabiyot</span>
+                  <i class="fa-solid fa-pen-nib cover-emblem"></i>
+                  <strong class="cover-title">Daftar hoshiyasidagi bitiklar</strong>
+                  <small class="cover-author">O'tkir Hoshimov</small>
+                </div>
+              </div>
+              <button type="button" class="btn-quick-view"><i class="fa-solid fa-eye"></i> Batafsil</button>
+            </div>
+            <div class="book-info">
+              <div class="book-meta">
+                <span class="book-genre">Badiiy Adabiyot</span>
+                <span class="book-rating"><i class="fa-solid fa-star"></i> 4.9</span>
+              </div>
+              <h3 class="book-title">Daftar hoshiyasidagi bitiklar</h3>
+              <div class="book-author-row">
+                <span class="book-author-avatar">
+                  <i class="fa-solid fa-user-pen"></i>
+                  <img class="author-photo" data-author="otkir-hoshimov" src="./3.jpg" alt="O'tkir Hoshimov" />
+                </span>
+                <p class="book-author">O'tkir Hoshimov</p>
+              </div>
+              <div class="book-footer">
+                <div class="book-price">
+                  <span class="price-now">49 000 so'm</span>
+                  <span class="price-old">60 000 so'm</span>
+                </div>
+                <div class="book-actions">
+                  <button type="button" class="btn-add-cart"><i class="fa-solid fa-bag-shopping"></i> Savatga</button>
+                  <div class="qty-stepper" style="display: none;">
+                    <button type="button" class="qty-btn btn-minus"><i class="fa-solid fa-minus"></i></button>
+                    <span class="qty-val">0</span>
+                    <button type="button" class="qty-btn btn-plus"><i class="fa-solid fa-plus"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="book-card tarix aksiya" data-author="yuval-harari" data-author-photo="./4.jpg" data-price="96000" data-desc="Homo sapiensning tosh davridan bugungi raqamli tamaddungacha bosib o'tgan hayratlanarli yo'li.">
+            <div class="book-visual">
+              <span class="badge-sale">Chegirma</span>
+              <div class="book-cover-3d cover-amber">
+                <div class="cover-spine"></div>
+                <div class="cover-content">
+                  <span class="cover-tag">Tarix va Falsafa</span>
+                  <i class="fa-solid fa-landmark cover-emblem"></i>
+                  <strong class="cover-title">Sapiens: Insoniyat tarixi</strong>
+                  <small class="cover-author">Yuval Noah Harari</small>
+                </div>
+              </div>
+              <button type="button" class="btn-quick-view"><i class="fa-solid fa-eye"></i> Batafsil</button>
+            </div>
+            <div class="book-info">
+              <div class="book-meta">
+                <span class="book-genre">Tarix va Falsafa</span>
+                <span class="book-rating"><i class="fa-solid fa-star"></i> 4.9</span>
+              </div>
+              <h3 class="book-title">Sapiens: Insoniyat tarixi</h3>
+              <div class="book-author-row">
+                <span class="book-author-avatar">
+                  <i class="fa-solid fa-user-pen"></i>
+                  <img class="author-photo" data-author="yuval-harari" src="./4.jpg" alt="Yuval Noah Harari" />
+                </span>
+                <p class="book-author">Yuval Noah Harari</p>
+              </div>
+              <div class="book-footer">
+                <div class="book-price">
+                  <span class="price-now">96 000 so'm</span>
+                  <span class="price-old">125 000 so'm</span>
+                </div>
+                <div class="book-actions">
+                  <button type="button" class="btn-add-cart"><i class="fa-solid fa-bag-shopping"></i> Savatga</button>
+                  <div class="qty-stepper" style="display: none;">
+                    <button type="button" class="qty-btn btn-minus"><i class="fa-solid fa-minus"></i></button>
+                    <span class="qty-val">0</span>
+                    <button type="button" class="qty-btn btn-plus"><i class="fa-solid fa-plus"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="book-card tarix" data-author="yuval-harari" data-author-photo="./4.jpg" data-price="102000" data-desc="Sun'iy intellekt, biotexnologiya va insoniyat kelajagini belgilovchi asosiy ssenariylar tahlili.">
+            <div class="book-visual">
+              <div class="book-cover-3d cover-sky">
+                <div class="cover-spine"></div>
+                <div class="cover-content">
+                  <span class="cover-tag">Tarix va Falsafa</span>
+                  <i class="fa-solid fa-brain cover-emblem"></i>
+                  <strong class="cover-title">Homo Deus: Ertangi kun</strong>
+                  <small class="cover-author">Yuval Noah Harari</small>
+                </div>
+              </div>
+              <button type="button" class="btn-quick-view"><i class="fa-solid fa-eye"></i> Batafsil</button>
+            </div>
+            <div class="book-info">
+              <div class="book-meta">
+                <span class="book-genre">Tarix va Falsafa</span>
+                <span class="book-rating"><i class="fa-solid fa-star"></i> 4.8</span>
+              </div>
+              <h3 class="book-title">Homo Deus: Ertangi kun</h3>
+              <div class="book-author-row">
+                <span class="book-author-avatar">
+                  <i class="fa-solid fa-user-pen"></i>
+                  <img class="author-photo" data-author="yuval-harari" src="./4.jpg" alt="Yuval Noah Harari" />
+                </span>
+                <p class="book-author">Yuval Noah Harari</p>
+              </div>
+              <div class="book-footer">
+                <div class="book-price">
+                  <span class="price-now">102 000 so'm</span>
+                </div>
+                <div class="book-actions">
+                  <button type="button" class="btn-add-cart"><i class="fa-solid fa-bag-shopping"></i> Savatga</button>
+                  <div class="qty-stepper" style="display: none;">
+                    <button type="button" class="qty-btn btn-minus"><i class="fa-solid fa-minus"></i></button>
+                    <span class="qty-val">0</span>
+                    <button type="button" class="qty-btn btn-plus"><i class="fa-solid fa-plus"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="book-card tarix aksiya" data-author="yuval-harari" data-author-photo="./4.jpg" data-price="91000" data-desc="Bugungi tezkor dunyoda texnologiya, siyosat, ta'lim va ma'naviy muammolarga zamonaviy nigoh.">
+            <div class="book-visual">
+              <span class="badge-sale">Chegirma</span>
+              <div class="book-cover-3d cover-emerald">
+                <div class="cover-spine"></div>
+                <div class="cover-content">
+                  <span class="cover-tag">Tarix va Falsafa</span>
+                  <i class="fa-solid fa-compass cover-emblem"></i>
+                  <strong class="cover-title">21-asr uchun 21 saboq</strong>
+                  <small class="cover-author">Yuval Noah Harari</small>
+                </div>
+              </div>
+              <button type="button" class="btn-quick-view"><i class="fa-solid fa-eye"></i> Batafsil</button>
+            </div>
+            <div class="book-info">
+              <div class="book-meta">
+                <span class="book-genre">Tarix va Falsafa</span>
+                <span class="book-rating"><i class="fa-solid fa-star"></i> 4.8</span>
+              </div>
+              <h3 class="book-title">21-asr uchun 21 saboq</h3>
+              <div class="book-author-row">
+                <span class="book-author-avatar">
+                  <i class="fa-solid fa-user-pen"></i>
+                  <img class="author-photo" data-author="yuval-harari" src="./4.jpg" alt="Yuval Noah Harari" />
+                </span>
+                <p class="book-author">Yuval Noah Harari</p>
+              </div>
+              <div class="book-footer">
+                <div class="book-price">
+                  <span class="price-now">91 000 so'm</span>
+                  <span class="price-old">110 000 so'm</span>
+                </div>
+                <div class="book-actions">
+                  <button type="button" class="btn-add-cart"><i class="fa-solid fa-bag-shopping"></i> Savatga</button>
+                  <div class="qty-stepper" style="display: none;">
+                    <button type="button" class="qty-btn btn-minus"><i class="fa-solid fa-minus"></i></button>
+                    <span class="qty-val">0</span>
+                    <button type="button" class="qty-btn btn-plus"><i class="fa-solid fa-plus"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="book-card biznes aksiya" data-author="cal-newport" data-author-photo="./5.jpg" data-price="85000" data-desc="Chalg'ituvchi omillar davrida diqqatni bir nuqtaga jamlab, yuqori qiymatli natija yaratish sirlari.">
+            <div class="book-visual">
+              <span class="badge-sale">Chegirma</span>
+              <div class="book-cover-3d cover-blue">
+                <div class="cover-spine"></div>
+                <div class="cover-content">
+                  <span class="cover-tag">Biznes</span>
+                  <i class="fa-solid fa-bullseye cover-emblem"></i>
+                  <strong class="cover-title">Deep Work (Chuqur mehnat)</strong>
+                  <small class="cover-author">Cal Newport</small>
+                </div>
+              </div>
+              <button type="button" class="btn-quick-view"><i class="fa-solid fa-eye"></i> Batafsil</button>
+            </div>
+            <div class="book-info">
+              <div class="book-meta">
+                <span class="book-genre">Biznes</span>
+                <span class="book-rating"><i class="fa-solid fa-star"></i> 4.9</span>
+              </div>
+              <h3 class="book-title">Deep Work (Chuqur mehnat)</h3>
+              <div class="book-author-row">
+                <span class="book-author-avatar">
+                  <i class="fa-solid fa-user-pen"></i>
+                  <img class="author-photo" data-author="cal-newport" src="./5.jpg" alt="Cal Newport" />
+                </span>
+                <p class="book-author">Cal Newport</p>
+              </div>
+              <div class="book-footer">
+                <div class="book-price">
+                  <span class="price-now">85 000 so'm</span>
+                  <span class="price-old">105 000 so'm</span>
+                </div>
+                <div class="book-actions">
+                  <button type="button" class="btn-add-cart"><i class="fa-solid fa-bag-shopping"></i> Savatga</button>
+                  <div class="qty-stepper" style="display: none;">
+                    <button type="button" class="qty-btn btn-minus"><i class="fa-solid fa-minus"></i></button>
+                    <span class="qty-val">0</span>
+                    <button type="button" class="qty-btn btn-plus"><i class="fa-solid fa-plus"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="book-card psixologiya" data-author="cal-newport" data-author-photo="./5.jpg" data-price="79000" data-desc="Ijtimoiy tarmoqlar va raqamli shovqindan xalos bo'lib, ongli yashash falsafasi.">
+            <div class="book-visual">
+              <div class="book-cover-3d cover-teal">
+                <div class="cover-spine"></div>
+                <div class="cover-content">
+                  <span class="cover-tag">Psixologiya</span>
+                  <i class="fa-solid fa-mobile-screen cover-emblem"></i>
+                  <strong class="cover-title">Digital Minimalism</strong>
+                  <small class="cover-author">Cal Newport</small>
+                </div>
+              </div>
+              <button type="button" class="btn-quick-view"><i class="fa-solid fa-eye"></i> Batafsil</button>
+            </div>
+            <div class="book-info">
+              <div class="book-meta">
+                <span class="book-genre">Psixologiya</span>
+                <span class="book-rating"><i class="fa-solid fa-star"></i> 4.7</span>
+              </div>
+              <h3 class="book-title">Digital Minimalism</h3>
+              <div class="book-author-row">
+                <span class="book-author-avatar">
+                  <i class="fa-solid fa-user-pen"></i>
+                  <img class="author-photo" data-author="cal-newport" src="./5.jpg" alt="Cal Newport" />
+                </span>
+                <p class="book-author">Cal Newport</p>
+              </div>
+              <div class="book-footer">
+                <div class="book-price">
+                  <span class="price-now">79 000 so'm</span>
+                </div>
+                <div class="book-actions">
+                  <button type="button" class="btn-add-cart"><i class="fa-solid fa-bag-shopping"></i> Savatga</button>
+                  <div class="qty-stepper" style="display: none;">
+                    <button type="button" class="qty-btn btn-minus"><i class="fa-solid fa-minus"></i></button>
+                    <span class="qty-val">0</span>
+                    <button type="button" class="qty-btn btn-plus"><i class="fa-solid fa-plus"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="book-card biznes aksiya" data-author="cal-newport" data-author-photo="./5.jpg" data-price="83000" data-desc="Sevimli kasbni topish emas, balki noyob mahorat orqali o'z sohangiz ustasiga aylanish strategiyasi.">
+            <div class="book-visual">
+              <span class="badge-sale">Chegirma</span>
+              <div class="book-cover-3d cover-gold">
+                <div class="cover-spine"></div>
+                <div class="cover-content">
+                  <span class="cover-tag">Biznes</span>
+                  <i class="fa-solid fa-award cover-emblem"></i>
+                  <strong class="cover-title">So Good They Can't Ignore You</strong>
+                  <small class="cover-author">Cal Newport</small>
+                </div>
+              </div>
+              <button type="button" class="btn-quick-view"><i class="fa-solid fa-eye"></i> Batafsil</button>
+            </div>
+            <div class="book-info">
+              <div class="book-meta">
+                <span class="book-genre">Biznes</span>
+                <span class="book-rating"><i class="fa-solid fa-star"></i> 4.8</span>
+              </div>
+              <h3 class="book-title">So Good They Can't Ignore You</h3>
+              <div class="book-author-row">
+                <span class="book-author-avatar">
+                  <i class="fa-solid fa-user-pen"></i>
+                  <img class="author-photo" data-author="cal-newport" src="./5.jpg" alt="Cal Newport" />
+                </span>
+                <p class="book-author">Cal Newport</p>
+              </div>
+              <div class="book-footer">
+                <div class="book-price">
+                  <span class="price-now">83 000 so'm</span>
+                  <span class="price-old">99 000 so'm</span>
+                </div>
+                <div class="book-actions">
+                  <button type="button" class="btn-add-cart"><i class="fa-solid fa-bag-shopping"></i> Savatga</button>
+                  <div class="qty-stepper" style="display: none;">
+                    <button type="button" class="qty-btn btn-minus"><i class="fa-solid fa-minus"></i></button>
+                    <span class="qty-val">0</span>
+                    <button type="button" class="qty-btn btn-plus"><i class="fa-solid fa-plus"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="book-card bolalar aksiya" data-author="saint-exupery" data-author-photo="./6.jpg" data-price="45000" data-desc="Bolalar uchun ertak, kattalar uchun esa do'stlik, sevgi va mas'uliyat haqidagi abadiy hikmat.">
+            <div class="book-visual">
+              <span class="badge-sale">Chegirma</span>
+              <div class="book-cover-3d cover-indigo">
+                <div class="cover-spine"></div>
+                <div class="cover-content">
+                  <span class="cover-tag">Bolalar Adabiyoti</span>
+                  <i class="fa-solid fa-star cover-emblem"></i>
+                  <strong class="cover-title">Kichkina shahzoda</strong>
+                  <small class="cover-author">Antoine de Saint-Exupéry</small>
+                </div>
+              </div>
+              <button type="button" class="btn-quick-view"><i class="fa-solid fa-eye"></i> Batafsil</button>
+            </div>
+            <div class="book-info">
+              <div class="book-meta">
+                <span class="book-genre">Bolalar Adabiyoti</span>
+                <span class="book-rating"><i class="fa-solid fa-star"></i> 5.0</span>
+              </div>
+              <h3 class="book-title">Kichkina shahzoda</h3>
+              <div class="book-author-row">
+                <span class="book-author-avatar">
+                  <i class="fa-solid fa-user-pen"></i>
+                  <img class="author-photo" data-author="saint-exupery" src="./6.jpg" alt="Antoine de Saint-Exupéry" />
+                </span>
+                <p class="book-author">Antoine de Saint-Exupéry</p>
+              </div>
+              <div class="book-footer">
+                <div class="book-price">
+                  <span class="price-now">45 000 so'm</span>
+                  <span class="price-old">58 000 so'm</span>
+                </div>
+                <div class="book-actions">
+                  <button type="button" class="btn-add-cart"><i class="fa-solid fa-bag-shopping"></i> Savatga</button>
+                  <div class="qty-stepper" style="display: none;">
+                    <button type="button" class="qty-btn btn-minus"><i class="fa-solid fa-minus"></i></button>
+                    <span class="qty-val">0</span>
+                    <button type="button" class="qty-btn btn-plus"><i class="fa-solid fa-plus"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="book-card badiiy" data-author="saint-exupery" data-author-photo="./6.jpg" data-price="56000" data-desc="Janubiy Amerika osmonida xavfli tungi pochta reyslarini amalga oshirgan uchuvchilar jasorati.">
+            <div class="book-visual">
+              <div class="book-cover-3d cover-sky">
+                <div class="cover-spine"></div>
+                <div class="cover-content">
+                  <span class="cover-tag">Badiiy Adabiyot</span>
+                  <i class="fa-solid fa-plane-up cover-emblem"></i>
+                  <strong class="cover-title">Tungi parvoz</strong>
+                  <small class="cover-author">Antoine de Saint-Exupéry</small>
+                </div>
+              </div>
+              <button type="button" class="btn-quick-view"><i class="fa-solid fa-eye"></i> Batafsil</button>
+            </div>
+            <div class="book-info">
+              <div class="book-meta">
+                <span class="book-genre">Badiiy Adabiyot</span>
+                <span class="book-rating"><i class="fa-solid fa-star"></i> 4.8</span>
+              </div>
+              <h3 class="book-title">Tungi parvoz</h3>
+              <div class="book-author-row">
+                <span class="book-author-avatar">
+                  <i class="fa-solid fa-user-pen"></i>
+                  <img class="author-photo" data-author="saint-exupery" src="./6.jpg" alt="Antoine de Saint-Exupéry" />
+                </span>
+                <p class="book-author">Antoine de Saint-Exupéry</p>
+              </div>
+              <div class="book-footer">
+                <div class="book-price">
+                  <span class="price-now">56 000 so'm</span>
+                </div>
+                <div class="book-actions">
+                  <button type="button" class="btn-add-cart"><i class="fa-solid fa-bag-shopping"></i> Savatga</button>
+                  <div class="qty-stepper" style="display: none;">
+                    <button type="button" class="qty-btn btn-minus"><i class="fa-solid fa-minus"></i></button>
+                    <span class="qty-val">0</span>
+                    <button type="button" class="qty-btn btn-plus"><i class="fa-solid fa-plus"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="book-card bolalar aksiya" data-author="saint-exupery" data-author-photo="./6.jpg" data-price="62000" data-desc="Yer yuzidagi insoniy birodarlik, tabiat go'zalligi va hayot mazmuni haqidagi lirik xotiralar.">
+            <div class="book-visual">
+              <span class="badge-sale">Chegirma</span>
+              <div class="book-cover-3d cover-purple">
+                <div class="cover-spine"></div>
+                <div class="cover-content">
+                  <span class="cover-tag">Bolalar Adabiyoti</span>
+                  <i class="fa-solid fa-globe cover-emblem"></i>
+                  <strong class="cover-title">Sayyora — odamlar maskani</strong>
+                  <small class="cover-author">Antoine de Saint-Exupéry</small>
+                </div>
+              </div>
+              <button type="button" class="btn-quick-view"><i class="fa-solid fa-eye"></i> Batafsil</button>
+            </div>
+            <div class="book-info">
+              <div class="book-meta">
+                <span class="book-genre">Bolalar Adabiyoti</span>
+                <span class="book-rating"><i class="fa-solid fa-star"></i> 4.9</span>
+              </div>
+              <h3 class="book-title">Sayyora — odamlar maskani</h3>
+              <div class="book-author-row">
+                <span class="book-author-avatar">
+                  <i class="fa-solid fa-user-pen"></i>
+                  <img class="author-photo" data-author="saint-exupery" src="./6.jpg" alt="Antoine de Saint-Exupéry" />
+                </span>
+                <p class="book-author">Antoine de Saint-Exupéry</p>
+              </div>
+              <div class="book-footer">
+                <div class="book-price">
+                  <span class="price-now">62 000 so'm</span>
+                  <span class="price-old">75 000 so'm</span>
+                </div>
+                <div class="book-actions">
+                  <button type="button" class="btn-add-cart"><i class="fa-solid fa-bag-shopping"></i> Savatga</button>
+                  <div class="qty-stepper" style="display: none;">
+                    <button type="button" class="qty-btn btn-minus"><i class="fa-solid fa-minus"></i></button>
+                    <span class="qty-val">0</span>
+                    <button type="button" class="qty-btn btn-plus"><i class="fa-solid fa-plus"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="xizmatlar" class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="section-tag">QULAYLIKLAR</span>
+            <h2>Nega aynan MUTOLAA?</h2>
+          </div>
+          <p>Har bir buyurtma kitobxonlar uchun maksimal g'amxo'rlik bilan tayyorlanadi</p>
+        </div>
+
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon"><i class="fa-solid fa-truck-fast"></i></div>
+            <h3>Tezkor yetkazish</h3>
+            <p>Toshkent bo'ylab 4 soatda, barcha viloyatlarga esa 24 soat ichida eshigingizgacha yetkazamiz.</p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon"><i class="fa-solid fa-certificate"></i></div>
+            <h3>Original nashrlar</h3>
+            <p>Barcha kitoblar rasmiy nashriyotlardan keltirilgan sifatli qog'oz va mustahkam muqovaga ega.</p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon"><i class="fa-solid fa-gift"></i></div>
+            <h3>Sovg'abop qadoq</h3>
+            <p>Yaqinlaringiz uchun buyurtma qilingan har bir kitob maxsus xatcho'p va chiroyli o'ramda yuboriladi.</p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon"><i class="fa-solid fa-headset"></i></div>
+            <h3>Kitob tanlashda yordam</h3>
+            <p>Qiziqishingiz va maqsadingizga mos asarlarni tavsiya qiluvchi doimiy maslahat xizmati.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="mualliflar" class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="section-tag">IJODKORLAR</span>
+            <h2>Mashhur mualliflar</h2>
+          </div>
+          <p>Muallif ustiga bosing va uning barcha kitoblarini katalogda ko'ring</p>
+        </div>
+
+        <div class="authors-grid">
+          <button type="button" class="author-card" data-author="james-clear" data-author-name="James Clear">
+            <div class="author-avatar">
+              <img class="author-photo" data-author="james-clear" src="./1.jpg" alt="James Clear"/>
+            </div>
+            <div class="author-meta">
+              <h3>James Clear</h3>
+              <span>3 ta kitob</span>
+            </div>
+          </button>
+
+          <button type="button" class="author-card" data-author="robert-martin" data-author-name="Robert C. Martin">
+            <div class="author-avatar">
+              <img class="author-photo" data-author="robert-martin" src="./2.jpg" alt="Robert C. Martin"/>
+            </div>
+            <div class="author-meta">
+              <h3>Robert C. Martin</h3>
+              <span>3 ta kitob</span>
+            </div>
+          </button>
+
+          <button type="button" class="author-card" data-author="otkir-hoshimov" data-author-name="O'tkir Hoshimov">
+            <div class="author-avatar">
+              <img class="author-photo" data-author="otkir-hoshimov" src="./3.jpg" alt="O'tkir Hoshimov"/>
+            </div>
+            <div class="author-meta">
+              <h3>O'tkir Hoshimov</h3>
+              <span>3 ta kitob</span>
+            </div>
+          </button>
+
+          <button type="button" class="author-card" data-author="yuval-harari" data-author-name="Yuval Noah Harari">
+            <div class="author-avatar">
+              <img class="author-photo" data-author="yuval-harari" src="./4.jpg" alt="Yuval Noah Harari"/>
+            </div>
+            <div class="author-meta">
+              <h3>Yuval Noah Harari</h3>
+              <span>3 ta kitob</span>
+            </div>
+          </button>
+
+          <button type="button" class="author-card" data-author="cal-newport" data-author-name="Cal Newport">
+            <div class="author-avatar">
+              <img class="author-photo" data-author="cal-newport" src="./5.jpg" alt="Cal Newport"/>
+            </div>
+            <div class="author-meta">
+              <h3>Cal Newport</h3>
+              <span>3 ta kitob</span>
+            </div>
+          </button>
+
+          <button type="button" class="author-card" data-author="saint-exupery" data-author-name="Antoine de Saint-Exupéry">
+            <div class="author-avatar">
+              <img class="author-photo" data-author="saint-exupery" src="./6.jpg" alt="Antoine de Saint-Exupéry" />
+            </div>
+            <div class="author-meta">
+              <h3>Antoine de Saint-Exupéry</h3>
+              <span>3 ta kitob</span>
+            </div>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="fikrlar" class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="section-tag">SHARHLAR</span>
+            <h2>Kitobxonlar fikri (12 ta sharh)</h2>
+          </div>
+          <div class="review-dots">
+            <button type="button" class="review-dot active" aria-label="1-guruh"></button>
+            <button type="button" class="review-dot" aria-label="2-guruh"></button>
+            <button type="button" class="review-dot" aria-label="3-guruh"></button>
+            <button type="button" class="review-dot" aria-label="4-guruh"></button>
+          </div>
+        </div>
+
+        <div class="reviews-wrapper">
+          <div class="review-slide active">
+            <article class="review-card">
+              <div class="review-top">
+                <div class="reviewer-avatar">
+                  <span>SK</span>
+                  <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Sardorbek Karimov" loading="lazy" />
+                </div>
+                <div>
+                  <h4>Sardorbek Karimov</h4>
+                  <span>Toshkent • Atomic Habits</span>
+                </div>
+              </div>
+              <p>"Kitob sifati va muqovasi juda zo'r ekan. Buyurtma berganimdan 4 soat o'tib uyimgacha olib kelib berishdi!"</p>
+            </article>
+
+            <article class="review-card">
+              <div class="review-top">
+                <div class="reviewer-avatar">
+                  <span>MR</span>
+                  <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Madina Rasulova" loading="lazy" />
+                </div>
+                <div>
+                  <h4>Madina Rasulova</h4>
+                  <span>Samarqand • Dunyoning ishlari</span>
+                </div>
+              </div>
+              <p>"O'tkir Hoshimov asarlarini aynan shu do'kondan oldim. Qog'ozi oq va ko'zni charchatmaydi."</p>
+            </article>
+
+            <article class="review-card">
+              <div class="review-top">
+                <div class="reviewer-avatar">
+                  <span>JT</span>
+                  <img src="https://randomuser.me/api/portraits/men/46.jpg" alt="Javohir Tursunov" loading="lazy" />
+                </div>
+                <div>
+                  <h4>Javohir Tursunov</h4>
+                  <span>Namangan • Clean Code</span>
+                </div>
+              </div>
+              <p>"Dasturchilar uchun eng kerakli kitoblarni topish oson bo'ldi. Narxlari ham boshqa joylarga nisbatan qulay."</p>
+            </article>
+          </div>
+
+          <div class="review-slide">
+            <article class="review-card">
+              <div class="review-top">
+                <div class="reviewer-avatar">
+                  <span>NX</span>
+                  <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Nilufar Xolmatova" loading="lazy" />
+                </div>
+                <div>
+                  <h4>Nilufar Xolmatova</h4>
+                  <span>Buxoro • Kichkina shahzoda</span>
+                </div>
+              </div>
+              <p>"Ukamga sovg'a sifatida buyurtma qildim. Chiroyli qadoqlangan holda yetib keldi, katta rahmat!"</p>
+            </article>
+
+            <article class="review-card">
+              <div class="review-top">
+                <div class="reviewer-avatar">
+                  <span>BR</span>
+                  <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="Bekzod Rahimov" loading="lazy" />
+                </div>
+                <div>
+                  <h4>Bekzod Rahimov</h4>
+                  <span>Andijon • Deep Work</span>
+                </div>
+              </div>
+              <p>"Imtihonlarga tayyorlanishda diqqatni jamlash uchun juda foydali kitob ekan, hammaga tavsiya qilaman."</p>
+            </article>
+
+            <article class="review-card">
+              <div class="review-top">
+                <div class="reviewer-avatar">
+                  <span>ZE</span>
+                  <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Zilola Ergasheva" loading="lazy" />
+                </div>
+                <div>
+                  <h4>Zilola Ergasheva</h4>
+                  <span>Farg'ona • Sapiens</span>
+                </div>
+              </div>
+              <p>"Sayt dizayni ham, xizmat ko'rsatish tezligi ham a'lo darajada. Yana yangi kitoblar kutib qolamiz."</p>
+            </article>
+          </div>
+
+          <div class="review-slide">
+            <article class="review-card">
+              <div class="review-top">
+                <div class="reviewer-avatar">
+                  <span>ON</span>
+                  <img src="https://randomuser.me/api/portraits/men/54.jpg" alt="Otabek Nurmatov" loading="lazy" />
+                </div>
+                <div>
+                  <h4>Otabek Nurmatov</h4>
+                  <span>Qarshi • Clean Architecture</span>
+                </div>
+              </div>
+              <p>"Frontend va backend arxitekturasini o'rganayotganlar uchun bebaho manba. Tez yetkazilgani yoqdi."</p>
+            </article>
+
+            <article class="review-card">
+              <div class="review-top">
+                <div class="reviewer-avatar">
+                  <span>SA</span>
+                  <img src="https://randomuser.me/api/portraits/women/26.jpg" alt="Shahnoza Aliyeva" loading="lazy" />
+                </div>
+                <div>
+                  <h4>Shahnoza Aliyeva</h4>
+                  <span>Urganch • Ikki eshik orasi</span>
+                </div>
+              </div>
+              <p>"Viloyatga ham ikki kunda yetib bordi. Kitob sahifalari mustahkam tikilgan, juda mamnunman."</p>
+            </article>
+
+            <article class="review-card">
+              <div class="review-top">
+                <div class="reviewer-avatar">
+                  <span>DQ</span>
+                  <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Dostonbek Qodirov" loading="lazy" />
+                </div>
+                <div>
+                  <h4>Dostonbek Qodirov</h4>
+                  <span>Jizzax • Digital Minimalism</span>
+                </div>
+              </div>
+              <p>"Telefonga ketadigan vaqtimni kamaytirishga katta yordam berdi. Chegirma bilan olganim yanada yoqdi."</p>
+            </article>
+          </div>
+
+          <div class="review-slide">
+            <article class="review-card">
+              <div class="review-top">
+                <div class="reviewer-avatar">
+                  <span>KY</span>
+                  <img src="https://randomuser.me/api/portraits/women/50.jpg" alt="Kamola Yusupova" loading="lazy" />
+                </div>
+                <div>
+                  <h4>Kamola Yusupova</h4>
+                  <span>Navoiy • Homo Deus</span>
+                </div>
+              </div>
+              <p>"Harari kitoblarining uchalasini ham to'plam qilib oldim. Har bir sahifasi chuqur mulohazaga chorlaydi."</p>
+            </article>
+
+            <article class="review-card">
+              <div class="review-top">
+                <div class="reviewer-avatar">
+                  <span>AM</span>
+                  <img src="https://randomuser.me/api/portraits/men/18.jpg" alt="Azizbek Mirzayev" loading="lazy" />
+                </div>
+                <div>
+                  <h4>Azizbek Mirzayev</h4>
+                  <span>Termiz • The Clean Coder</span>
+                </div>
+              </div>
+              <p>"Jamoamizdagi barcha yosh dasturchilar uchun 5 ta buyurtma qildik. Ajoyib xizmat!"</p>
+            </article>
+
+            <article class="review-card">
+              <div class="review-top">
+                <div class="reviewer-avatar">
+                  <span>SM</span>
+                  <img src="https://randomuser.me/api/portraits/women/33.jpg" alt="Sevara Mahmudova" loading="lazy" />
+                </div>
+                <div>
+                  <h4>Sevara Mahmudova</h4>
+                  <span>Nukus • Daftar hoshiyasidagi bitiklar</span>
+                </div>
+              </div>
+              <p>"Har kuni uxlashdan oldin 10 bet o'qiyman. Eng sevimli onlayn kitob do'konimga aylandi."</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="aloqa" class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="#bosh-sahifa" class="brand">
+            <span class="brand-logo-circle">
+              <i class="fa-solid fa-book-open logo-main-icon"></i>
+              <i class="fa-solid fa-feather-pointed logo-sub-icon"></i>
+            </span>
+            <span class="brand-name-wrap">
+              <span class="brand-text">MUTOLAA</span>
+              <span class="brand-sub">KITOB UYI</span>
+            </span>
+          </a>
+          <p class="footer-about">Bilim, tafakkur va ilhom manbai bo'lgan eng sara jahon hamda o'zbek adabiyoti namunalarini kitobxonlarga tezkor yetkazamiz.</p>
+          <div class="social-links">
+            <a href="#aloqa" class="social-circle" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
+            <a href="#aloqa" class="social-circle" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#aloqa" class="social-circle" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#aloqa" class="social-circle" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Bo'limlar</h4>
+          <ul class="footer-list">
+            <li><a href="#bosh-sahifa">Bosh sahifa</a></li>
+            <li><a href="#yonalishlar">Mashhur yo'nalishlar</a></li>
+            <li><a href="#katalog">Kitoblar katalogi</a></li>
+            <li><a href="#xizmatlar">Xizmatlarimiz</a></li>
+            <li><a href="#mualliflar">Mashhur mualliflar</a></li>
+            <li><a href="#fikrlar">Kitobxonlar fikri</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Janrlar</h4>
+          <ul class="footer-list">
+            <li><button type="button" class="footer-filter-link filter-btn" data-category="biznes" data-scroll="true">Biznes va Startaplar</button></li>
+            <li><button type="button" class="footer-filter-link filter-btn" data-category="it" data-scroll="true">IT va Dasturlash</button></li>
+            <li><button type="button" class="footer-filter-link filter-btn" data-category="badiiy" data-scroll="true">Badiiy Adabiyot</button></li>
+            <li><button type="button" class="footer-filter-link filter-btn" data-category="psixologiya" data-scroll="true">Psixologiya</button></li>
+            <li><button type="button" class="footer-filter-link filter-btn" data-category="tarix" data-scroll="true">Tarix va Falsafa</button></li>
+            <li><button type="button" class="footer-filter-link filter-btn" data-category="bolalar" data-scroll="true">Bolalar Adabiyoti</button></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Aloqa va Obuna</h4>
+          <ul class="footer-contact">
+            <li><i class="fa-solid fa-location-dot"></i> Toshkent sh., Amir Temur ko'chasi, 45</li>
+            <li><i class="fa-solid fa-phone"></i> +998 (71) 200-45-45</li>
+            <li><i class="fa-solid fa-clock"></i> Har kuni: 09:00 – 22:00</li>
+          </ul>
+          <div class="newsletter-form">
+            <input type="email" id="newsletterInput" placeholder="Email manzilingiz..." />
+            <button type="button" class="btn-primary newsletter-btn" id="newsletterBtn" aria-label="Obuna bo'lish">
+              <i class="fa-solid fa-paper-plane"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026 MUTOLAA Kitob Uyi. Barcha huquqlar himoyalangan.</span>
+        <div class="payment-badges">
+          <span>UZCARD</span>
+          <span>HUMO</span>
+          <span>PAYME</span>
+          <span>CLICK</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal-backdrop" id="quickModal">
+    <div class="modal-box">
+      <button type="button" class="modal-close" id="closeModalBtn" aria-label="Yopish">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <span class="section-tag">KITOB HAQIDA</span>
+      <h3 id="modalTitle">Kitob nomi</h3>
+      <div class="modal-author-row">
+        <span class="modal-author-avatar">
+          <i class="fa-solid fa-user-pen"></i>
+          <img id="modalAuthorImg" src="" alt="" style="display: none;" />
+        </span>
+        <p class="modal-author" id="modalAuthorName">Muallif</p>
+      </div>
+      <p class="modal-desc" id="modalDesc">Kitob tavsifi</p>
+      <div class="modal-footer">
+        <strong class="price-now" id="modalPrice">0 so'm</strong>
+      </div>
+    </div>
+  </div>
+
+  <aside class="cart-drawer" id="cartDrawer">
+    <div class="cart-head">
+      <h3><i class="fa-solid fa-bag-shopping"></i> Savatcha</h3>
+      <button type="button" class="icon-btn" id="closeCartBtn" aria-label="Yopish">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+    <div class="cart-body" id="cartItemsList">Savatchangiz hozircha bo'sh</div>
+    <div class="cart-foot">
+      <div class="cart-total">
+        <span>Jami summa:</span>
+        <strong id="cartTotalAmount">0 so'm</strong>
+      </div>
+      <button type="button" class="btn-primary btn-checkout" id="checkoutBtn">
+        <i class="fa-solid fa-check"></i> Buyurtma berish
+      </button>
+    </div>
+  </aside>
+
+  <div class="toast-box" id="toastBox">
+    <i class="fa-solid fa-circle-check"></i>
+    <span id="toastText">Buyurtmangiz qabul qilindi!</span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
